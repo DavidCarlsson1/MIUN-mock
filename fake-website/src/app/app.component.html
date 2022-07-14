@@ -380,15 +380,23 @@
     </button>
   </div>
 
-  <!-- Terminal -->
-  <div class="terminal" [ngSwitch]="selection.value">
-      <pre *ngSwitchDefault>ng generate component xyz</pre>
-      <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
-      <pre *ngSwitchCase="'pwa'">ng add @angular/pwa</pre>
-      <pre *ngSwitchCase="'dependency'">ng add _____</pre>
-      <pre *ngSwitchCase="'test'">ng test</pre>
-      <pre *ngSwitchCase="'build'">ng build</pre>
-  </div>
+  <!-- GET APIs -->
+  <table>
+    <thead>
+      <tr>
+        <th> Id2 </th>
+        <th> Headline</th>
+        <th> Text </th>
+      </tr>
+    </thead>
+   <!-- <tbody>
+      <tr *ngFor="let post of posts ">
+        <td> {{post.id2}}</td>
+        <td>{{post.headline}}</td>
+        <td> {{post.text</td>
+      </tr>
+    </tbody> -->
+  </table> 
 
   <!-- Links -->
   <div class="card-container">
