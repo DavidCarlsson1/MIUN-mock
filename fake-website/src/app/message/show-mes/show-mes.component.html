@@ -1,0 +1,39 @@
+<table class="table table-striped">
+    <thead>
+        <th>MessageID</th>
+        <th>Headline</th>
+        <th>Text</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let post of posts">
+            <td>{{post.shortId}}</td>
+            <td>{{post.headline}}</td>
+            <td>{{post.text}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<div *ngFor="let post of posts">
+<div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+                <td>{{post.shortId}}</td> 
+                <h3><td>{{post.headline}}</td></h3>
+                <td>{{post.text}}</td> 
+                <a class="search-result" [href]= "post.hyperlink">Läs mer.</a>       
+            </div>
+        </div>    
+    </div>    
+</div>
+</div>
+
+        
+
+
+    
+      
+
+      
+     
+   
