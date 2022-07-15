@@ -1,24 +1,68 @@
-<div id="header">
-  <h1 style="text-align: center">Testsida för import från öppet API</h1><br>
-  <p style="padding-left: 20%; padding-right: 20%; text-align: center;">Denna sida är skapad som ett exempel för att visa hur en användare skulle kunna hämta data från CSN:s öppna API och publicera på sin hemsida. 
-    Varje "kort" nedan representerar ett meddelande som CSN:s kommunikatörer valt att publicera.</p>
-</div>
+<head>
 
-<div id="cardDiv" >
-  <div *ngFor="let message of apiResponse?.messages">
-    <div class="card text-center" style="margin-left: 10px; margin-right: 10px; height: 500px;">
-      <div class="card-body">
-        <div class="headlineDiv">
-          <h5 class="card-title">{{ message.headline }}</h5>
-        </div>
-        <div class="textDiv">
-          <p class="card-text">{{ message.text }}</p>
-        </div>
-        <div style="margin-top: 20px">
-          <a href="#" class="btn btn-primary">Länk till CSN</a>
+</head>
+
+<body>
+  <div id="topNav">
+    <div id="topNavContent">
+      <div id="topNavLeftContent">
+        <p style="color: white">Student &nbsp; &nbsp; Medarbetare &nbsp; &nbsp; Biblioteket</p>
+      </div>
+      <div id="topNavRightContent">
+        <p style="color: white;">Favoriter &nbsp; &nbsp; Lättläst &nbsp; &nbsp; Language</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="midNav">
+    <div id="midNavContent">
+      <div id="midNavLeftContent">
+        <img src="../assets/menu.png" style="width: 90px; height: 30px;">
+      </div>
+      <div id="midNavMidContent">
+        <img src="../assets/miun_logo.png" style="width: 55%; height: 90%; display: block; margin: auto; padding-top: 5px;">
+      </div>
+      <div id="midNavRightContent">
+        <img src="../assets/search.png" style="width: 85%; height: 80%; float: right; padding-top: 25px;">
+      </div>
+    </div>
+  </div>
+
+  <div id="bottomNav">
+    <div id="bottomNavContent">
+      <p style="color: #0d58a3; padding-top: 10px; display: inline-block;">Start</p>
+      <p style="display: inline-block;">&nbsp; > &nbsp; Student &nbsp; > Info från CSN</p>
+    </div>
+  </div>
+
+  <div id="bottomNav2">
+    <div id="bottomNav2Content">
+      <img src="../assets/menu2.png" style="width: 100%; height: 90px; margin-top: 40px">
+    </div>
+  </div>
+
+  <div id="contentDiv">
+    <div style="text-align: center; margin-bottom: 30px;">
+      <h1>Info från CSN</h1>
+    </div>
+    <div id="cardDiv">
+      <div *ngFor="let message of apiResponse?.messages">
+        <div class="card text-center shadow p-3 mb-5 bg-white rounded" style="margin-left: 10px; margin-right: 10px;">
+          <div class="card-body">
+            <div class="headlineDiv">
+              <h5 class="card-title">{{ message.headline }}</h5>
+            </div>
+            <div class="textDiv">
+              <p class="card-text">{{ message.text }}</p>
+            </div>
+            <div style="margin-top: 20px; margin-bottom: 10px">
+              <a [href]="message.hyperlink" class="btn btn-primary">Länk till CSN</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</body>
+
 

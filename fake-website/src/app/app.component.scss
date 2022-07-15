@@ -1,25 +1,107 @@
 .card {
-    width: 30%;
+    width: 400px;
+    height: 500px;
     float: left;
+    background-color: #f9f7f6;
 }
 
 .h1 {
     font-weight: bolder;
 }
 
-#header {
-    padding-top: 50px;
+#topNav {
+    height: 33px;
+    background-color: #484a46;
+}
+
+#topNavContent {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+#topNavLeftContent {
+    float: left;
+    padding-top: 3px;
+    width: 400px;
+}
+
+#topNavRightContent {
+    float: right;
+    text-align: right;
+    padding-top: 3px;
+    width: 400px;
+}
+
+#midNav {
+    height: 105px;
+    border-bottom-style: solid;
+    border-width: 0.5px;
+    border-color: #cdd1c7;
+}
+
+#midNavContent {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+#midNavLeftContent {
+    float: left;
+    width: 350px;
+    padding-top: 28px;
+}
+
+#midNavMidContent {
+    float: left;
+    width: 290px;
+    height: 86px;
+}
+
+#midNavRightContent {
+    float: right;
+    width: 350px;
+    position: relative;
+}
+
+#bottomNav {
+    height: 50px;
+}
+
+#bottomNavContent {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+#bottomNav2 {
+    height: 170px;
+    background-color: #f9f7f6;
+}
+
+#bottomNav2Content {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+#contentDiv {
+    background-color: #f9f7f6;
+    width: 100%;
+    height: 2000px;
 }
 
 #cardDiv {
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-top: 60px;
+    background-color: #f9f7f6;
+    position: relative;
+    margin: 0 auto;
+    width: 1260px;
 }
 
 .card.text-center {
     padding-left: 10px;
     padding-right: 10px;
+    background-color: #f9f7f6;
 }
 
 .textDiv {
@@ -31,4 +113,11 @@
 .headlineDiv {
     height: 50px; 
     margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #c1daf3 !important; 
+    color: #484a46 !important; 
+    border-style: none; 
+    font-weight: bold;
 }
