@@ -3,6 +3,7 @@
     height: 500px;
     float: left;
     background-color: #f9f7f6;
+    border-radius: 0 !important;
 }
 
 .h1 {
@@ -24,6 +25,7 @@
     float: left;
     padding-top: 3px;
     width: 400px;
+    cursor: pointer;
 }
 
 #topNavRightContent {
@@ -31,6 +33,7 @@
     text-align: right;
     padding-top: 3px;
     width: 400px;
+    cursor: pointer;
 }
 
 #midNav {
@@ -120,4 +123,5 @@
     color: #484a46 !important; 
     border-style: none; 
     font-weight: bold;
+    border-radius: 0 !important;
 }
