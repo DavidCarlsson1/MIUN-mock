@@ -9,5 +9,6 @@ export interface ApiResponse {
         endDate: string;
         publishingDate: string;
         logo: string;
+        targetGroup: string;
     }[];
 }
