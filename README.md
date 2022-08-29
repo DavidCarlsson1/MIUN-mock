@@ -1,6 +1,6 @@
 # MIUN-mock
 
-Gå in i den yttre foldern .....
+Gå in i den yttre foldern MIUN-mock/fake-website/
 
 och kör 
 
